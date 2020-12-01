@@ -1,1 +1,0 @@
-Modified version of fpmul with input registers: fpmul_pipeline_inregs

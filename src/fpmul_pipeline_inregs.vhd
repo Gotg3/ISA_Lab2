@@ -13,7 +13,7 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.std_logic_arith.all;
 
-ENTITY fpmul_pipeline_inreg IS
+ENTITY Fpmul IS
    PORT( 
       FP_A : IN     std_logic_vector (31 DOWNTO 0);
       FP_B : IN     std_logic_vector (31 DOWNTO 0);
@@ -23,7 +23,7 @@ ENTITY fpmul_pipeline_inreg IS
 
 -- Declarations
 
-END fpmul_pipeline_inreg ;
+END Fpmul ;
 
 --
 -- VHDL Architecture HAVOC.FPmul.pipeline
@@ -42,7 +42,7 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.std_logic_arith.all;
 
-ARCHITECTURE pipeline OF fpmul_pipeline_inreg IS
+ARCHITECTURE pipeline OF Fpmul IS
 
    -- Architecture declarations
 
