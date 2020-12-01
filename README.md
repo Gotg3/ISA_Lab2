@@ -9,8 +9,10 @@ Federico Fusto 279925\
 Goti Gianluca 269825
 
 Content
-Report:\
-src:\
-matlab: Frequency trend plots\
+Report:all generated reports\
+src: VHDL files\
+tb: testbench files\
+sim: scripts\
+matlab: Frequency trend script\
 excel: Dadda-tree structure\
 
