@@ -8,11 +8,11 @@ Chisciotti Laura 274728\
 Federico Fusto 279925\
 Goti Gianluca 269825
 
-Content
+Content:\
 Report:all generated reports\
 src: VHDL files\
 tb: testbench files\
 sim: scripts\
 matlab: Frequency trend script\
-excel: Dadda-tree structure\
+excel: Dadda-tree structure
 
