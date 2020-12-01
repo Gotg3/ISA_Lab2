@@ -9,3 +9,6 @@ Federico Fusto 279925\
 Goti Gianluca 269825
 
 Content
+Report:\
+src:\
+matlab: Frequency trend plots
