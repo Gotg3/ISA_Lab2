@@ -14,5 +14,5 @@ src: VHDL files\
 tb: testbench files\
 sim: scripts\
 matlab: Frequency trend script\
-excel: Dadda-tree structure\
+excel: Dadda-tree structure
 
