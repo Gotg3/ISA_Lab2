@@ -1,0 +1,57 @@
+Information: Updating design information... (UID-85)
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Fpmul
+Version: O-2018.06-SP4
+Date   : Wed Nov 25 22:32:42 2020
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: MY_CLK_r_REG653_S2
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: MY_CLK_r_REG260_S3
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Fpmul              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock MY_CLK (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  MY_CLK_r_REG653_S2/CK (DFF_X1)           0.00       0.00 r
+  MY_CLK_r_REG653_S2/Q (DFF_X1)            0.17       0.17 r
+  U6592/Z (MUX2_X1)                        0.08       0.25 r
+  U6591/ZN (NAND2_X1)                      0.04       0.28 f
+  U5205/ZN (XNOR2_X1)                      0.07       0.35 r
+  U4716/ZN (XNOR2_X1)                      0.06       0.41 r
+  U4715/ZN (XNOR2_X1)                      0.06       0.47 r
+  U5574/ZN (XNOR2_X1)                      0.06       0.54 r
+  U7342/ZN (OAI21_X1)                      0.03       0.57 f
+  MY_CLK_r_REG260_S3/D (DFF_X1)            0.01       0.57 f
+  data arrival time                                   0.57
+
+  clock MY_CLK (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                       -0.07      -0.07
+  MY_CLK_r_REG260_S3/CK (DFF_X1)           0.00      -0.07 r
+  library setup time                      -0.04      -0.11
+  data required time                                 -0.11
+  -----------------------------------------------------------
+  data required time                                 -0.11
+  data arrival time                                  -0.57
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.69
+
+
+1

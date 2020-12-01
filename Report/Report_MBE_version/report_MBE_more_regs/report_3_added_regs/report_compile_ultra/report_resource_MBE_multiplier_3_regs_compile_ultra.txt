@@ -1,0 +1,53 @@
+ 
+****************************************
+Report : resources
+Design : Fpmul
+Version: O-2018.06-SP4
+Date   : Wed Nov 25 14:34:21 2020
+****************************************
+
+
+Resource Report for this hierarchy in file ../src/fpmul_stage1_struct.vhd
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| add_x_19       | DW01_add       | width=63   | I2/mbe_multpl/add_95 (MBE_MULTIPLIER.vhd:95) |
+| add_x_37       | DW01_inc       | width=25   | I3/I11/add_45 (fpround_fpround.vhd:45) |
+| add_x_42       | DW01_add       | width=8    | I3/I9/add_41_aco (fpnormalize_fpnormalize.vhd:41) |
+| add_x_44       | DW01_add       | width=8    | I4/I1/add_41_aco (fpnormalize_fpnormalize.vhd:41) |
+| DP_OP_97J1_122_3252             |            |                            |
+|                | DP_OP_97J1_122_3252 |       |                            |
+=============================================================================
+
+Datapath Report for DP_OP_97J1_122_3252
+==============================================================================
+| Cell                 | Contained Operations                                |
+==============================================================================
+| DP_OP_97J1_122_3252  | I2/add_240 (fpmul_stage2_struct_3_added_regs_MBE.vhd:240) |
+                 | I2/add_240_2 (fpmul_stage2_struct_3_added_regs_MBE.vhd:240) |
+==============================================================================
+
+==============================================================================
+|       |      | Data     |       |                                          |
+| Var   | Type | Class    | Width | Expression                               |
+==============================================================================
+| I1    | PI   | Unsigned | 8     |                                          |
+| I2    | PI   | Unsigned | 8     |                                          |
+| O1    | PO   | Unsigned | 8     | I1 + I2 + $unsigned(1'b1) (fpmul_stage2_struct_3_added_regs_MBE.vhd:240) |
+==============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_x_19           | DW01_add         | pparch (area,speed)                 |
+| add_x_37           | DW01_inc         | pparch (area,speed)                 |
+| add_x_42           | DW01_add         | apparch (area)     |                |
+| add_x_44           | DW01_add         | apparch (area)     |                |
+| DP_OP_97J1_122_3252                   |                    |                |
+|                    | DP_OP_97J1_122_3252 | str (area)      |                |
+===============================================================================
+
+1
