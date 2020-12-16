@@ -8,15 +8,15 @@ Report : timing
         -max_paths 1
 Design : Fpmul
 Version: O-2018.06-SP4
-Date   : Tue Nov 24 14:22:28 2020
+Date   : Tue Nov 24 16:19:40 2020
 ****************************************
 
 Operating Conditions: typical   Library: NangateOpenCellLibrary
 Wire Load Model Mode: top
 
-  Startpoint: MY_CLK_r_REG22_S6
+  Startpoint: MY_CLK_r_REG25_S6
               (rising edge-triggered flip-flop clocked by MY_CLK)
-  Endpoint: FP_Z[13] (output port clocked by MY_CLK)
+  Endpoint: FP_Z[0] (output port clocked by MY_CLK)
   Path Group: MY_CLK
   Path Type: max
 
@@ -28,12 +28,11 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock MY_CLK (rise edge)                 0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  MY_CLK_r_REG22_S6/CK (DFF_X1)            0.00       0.00 r
-  MY_CLK_r_REG22_S6/Q (DFF_X1)             0.13       0.13 r
-  U4933/ZN (OR2_X1)                        0.05       0.18 r
-  U4932/ZN (NAND2_X1)                      0.03       0.21 f
-  FP_Z[13] (out)                           0.02       0.23 f
-  data arrival time                                   0.23
+  MY_CLK_r_REG25_S6/CK (DFF_X1)            0.00       0.00 r
+  MY_CLK_r_REG25_S6/Q (DFF_X1)             0.13       0.13 r
+  U8771/ZN (OAI22_X1)                      0.05       0.19 f
+  FP_Z[0] (out)                            0.02       0.21 f
+  data arrival time                                   0.21
 
   clock MY_CLK (rise edge)                 0.00       0.00
   clock network delay (ideal)              0.00       0.00
@@ -42,9 +41,9 @@ Wire Load Model Mode: top
   data required time                                 -0.57
   -----------------------------------------------------------
   data required time                                 -0.57
-  data arrival time                                  -0.23
+  data arrival time                                  -0.21
   -----------------------------------------------------------
-  slack (VIOLATED)                                   -0.80
+  slack (VIOLATED)                                   -0.78
 
 
 1
